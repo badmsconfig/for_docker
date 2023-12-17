@@ -82,3 +82,6 @@ def add_row(new):
     cur = add_ws(cur, new)
     con.commit()
     con.close()
+
+if __name__ == '__main':
+    add_row()

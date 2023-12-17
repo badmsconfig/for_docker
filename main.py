@@ -1,4 +1,4 @@
-from sqlite3 import connect
+#from sqlite3 import connect
 
 from flask import Flask, render_template, request
 
@@ -40,3 +40,5 @@ def result():
     add_row(dat)
     return render_template('about.html', res=dat)
 
+if __name__ == '__main__':
+    app.run()
